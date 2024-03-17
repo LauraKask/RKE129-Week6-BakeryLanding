@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Italiana&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Hubballi", sans-serif;
+    line-height: 2;
+}
+
+.header{
+    height: 95vh;
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.336), rgba(0, 0, 0, 0.137)) , url(../img/image2.jpg);
+    background-position: center;
+    background-size: cover;   
+}
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -35%);
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.text-box h1{
+    text-transform: uppercase;
+    color: rgb(47, 68, 61);
+    text-shadow: 0 0 3px white, 0 0 5px pink;
+}
+
+.heading-main{
+    display: block;
+    font-size: 5rem;
+    letter-spacing: 1.1rem;
+    animation-name: moveInLeft;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    80%{
+        transform: translateX(50px);
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.heading-sub{
+    display: block;
+    font-size: 1.6rem;
+    animation-name: moveInRight;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInRight {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+
+    80%{
+        transform: translateX(-50px);
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.btn-container{
+    text-align: center;
+}
+
+.btn {
+    border-bottom: 0.2rem solid rgba(255, 255, 255, 0.219);
+    color: white;
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-bottom: 6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s; 
+}
+
+.btn:hover {
+    background-color: rgba(47, 68, 61, 0.63);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.btn:active{
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(5px);
+}
+
+.main {
+    background-color:rgb(5, 63, 44);
+    height: 900px;
+    margin-top: -15rem;
+    text-align: center;
+    padding-top: 15rem;
+    clip-path: polygon(51% 11%, 100% 0, 100% 43%, 100% 100%, 100% 91%, 49% 100%, 0 90%, 0% 43%, 0 0);
+}
+
+.main h1{
+    color: aliceblue;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 3px white, 0 0 5px pink;
+}
+
+.gallery {
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    width: 75%;
+}
+
+.gallery_photo {
+    box-shadow: 0 1.5rem 4rem rgb(0, 0, 0, 0.8);
+    outline-offset: 1rem;
+    position: absolute;
+    width: 250px;
+    transition: all 0.3s;
+    z-index: 10;
+}
+
+.gallery_photo:hover {
+    outline: 0.8rem solid rgba(47, 68, 61, 0.185) ;
+    transform: scale(1.1);
+    z-index: 20;
+}
+
+
+.gallery_photo-1 {
+    left: 20%;
+    top: 15%;
+    width: 250px; 
+}
+
+.gallery_photo-2 {
+    top: 35%;
+}
+
+.gallery_photo-3 {
+    left: 35%;
+    top: 25%;
+    width: 250px;
+}
+
+.footer{
+    color: rgb(47, 68, 61);
+    font-size: 1rem;
+    height: 200px;
+    text-align: center;
+    padding: 2rem;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 1rem;  
+}
+
+.footer ul li a{
+    color: rgb(47, 68, 61);
+    text-decoration: none;
+}
+
+.footer ul li:hover, .footer ul li a:hover{
+    color: rgb(62, 62, 150);
+    transform: scale(1.3);
+}
+
+
+
+    
+    
+
